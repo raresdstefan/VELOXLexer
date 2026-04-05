@@ -1,5 +1,0 @@
-// Test 2: Vitesses avec operateurs et separateurs
-CAST shield_rush 60kms + 10kms ##
-BOOST storm_run 3 ^ 2 ##
-INVERT dark_slide -50mps ##
-LOCK speed_anchor ( 200kms , 0.5swift ) ##
