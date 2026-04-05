@@ -1,4 +1,5 @@
 VELOX Lexer — Analyseur lexical pour le langage magique VELOX
+
 Equipe: Victor Ioan Stoian & Rares Stefan Delamarian
 
 Description: VELOX est un langage magique ou chaque sort opere sur des vitesses (speed values). Les sorts lancent, amplifient, inversent ou verrouillent des vitesses magiques.
