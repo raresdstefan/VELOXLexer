@@ -1,0 +1,31 @@
+// Test 5: Grand rituel de vitesse maximale
+// Toutes les fonctionnalites du langage VELOX
+// Declarations initiales
+CAST alpha_stream 100kms ##
+CAST beta_flow 3.14mps ##
+CAST gamma_pulse 1warp ##
+// Amplifications en chaine
+BOOST alpha_stream 5 ^ 2 ##
+BOOST beta_flow +10 ##
+BOOST gamma_pulse 0.5warp ##
+// Phases de synchronisation
+PHASE sync_A alpha_stream * 2 ##
+PHASE sync_B beta_flow ^ 3 ##
+PHASE sync_C gamma_pulse + 0.1warp ##
+// Sortes de surcharge
+SURGE overdrive_1 999kms ##
+SURGE overdrive_2 -7mps ##
+SURGE overdrive_3 +100swift ##
+// Verrous de vitesse avec listes
+LOCK vault_alpha ( 100kms , 200kms , 300kms ) ##
+LOCK vault_beta ( 1warp , 0.5warp ) ##
+LOCK vault_gamma ( 1crawl , 10swift , 100mps ) ##
+// Inversions de phase
+INVERT mirror_alpha -100kms ##
+INVERT mirror_beta -3.14mps ##
+// Neutralisations finales
+NULLIFY overflow_kms 0.001kms ##
+NULLIFY overflow_warp 1warp ##
+// Sorts de cloture
+CAST final_echo sync_A + sync_B ##
+CAST omega_blast vault_alpha * 3 ##

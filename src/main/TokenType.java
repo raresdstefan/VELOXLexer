@@ -1,0 +1,4 @@
+package main;
+public enum TokenType {
+    KEYWORD, SPEED, NUMBER, IDENTIFIER, OPERATOR, SEPARATOR, END, UNKNOWN
+}

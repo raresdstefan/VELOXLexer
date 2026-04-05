@@ -1,0 +1,16 @@
+// Test 4: Rituel de vitesse en plusieurs etapes
+// Etape 1: Preparation des composantes
+CAST base_wind 50kms ##
+SURGE high_current 200mps ##
+// Etape 2: Amplification
+BOOST base_wind 2 ^ 3 ##
+BOOST high_current +4 ##
+// Etape 3: Combinaisons avec separateurs
+LOCK nexus_speed ( 100kms , 50mps ) ##
+LOCK dual_flow ( 0.5warp , 1swift , 2crawl ) ##
+// Etape 4: Inversions et neutralisations
+INVERT base_wind -30kms ##
+NULLIFY residual_flux 0.01mps ##
+// Etape 5: Phase finale
+PHASE grand_ritual 9warp ##
+CAST finalburst nexus_speed + 10kms ##
