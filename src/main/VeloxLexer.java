@@ -11,15 +11,15 @@ public class VeloxLexer {
 
     // Token rules
     private static final Object[][] TOKEN_RULES = {
-            // 1. Comments — consumed silently
+            // 1. Comments - ignored
             { "//[^\n]*", null },
             // 2. End-of-statement marker ##
             { "##", TokenType.END },
-            // 3. SPEED — number immediately followed by a valid speed unit (no space)
+            // 3. SPEED - number followed by a valid speed unit (no space)
             // [+\-]? [0-9]+ (.[0-9]+)? then unit
             { "[+\\-]?[0-9]+(?:\\.[0-9]+)?(?:kms|mps|warp|swift|crawl)",
                     TokenType.SPEED },
-            // 4. NUMBER — standalone signed integer or decimal
+            // 4. NUMBER - int or decimal
             { "[+\\-]?[0-9]+(?:\\.[0-9]+)?", TokenType.NUMBER },
             // 5. Operators
             { "[+\\-*/^~]", TokenType.OPERATOR },
